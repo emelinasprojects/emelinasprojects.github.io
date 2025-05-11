@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<!--
+	Phantom by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Phantom by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="inner">
+
+					<!-- Menu Buttons -->
+					<div class="menu-buttons">
+						<a href="index.html" class="menu-button">Projects</a>
+						<a href="About.html" class="menu-button">Skills</a>
+						<a href="connect.html" class="menu-button">Connect</a>
+					</div>
+						</div>
+					</header>
+					<br>
+					<br>
+					<br>
+					<br>
+
+				<!-- Main -->
+					<div id="main">
+						<div class="inner">
+							<h1>Cyclistic user type analysis</h1>
+							<br>
+							<br>
+							<br>
+							<br>
+							<p>Google Data Analytics Certificate Capstone Project.</p>
+							<p><b>Tools used:</b> SQL, Tableau</p>
+							<div class='tableauPlaceholder' id='viz1746977582143' style='position: relative'><noscript><a href='#'><img alt='Cyclistic user type analysis for rides registered in July 2021 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;96&#47;96C27X49Y&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='path' value='shared&#47;96C27X49Y' /> <param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;96&#47;96C27X49Y&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-GB' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1746977582143');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1877px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+							<br>
+							<p><a href="https://public.tableau.com/shared/96C27X49Y?:display_count=n&:origin=viz_share_link" target="_blank">
+								View dashboard on Tableau Public →
+
+							<p><a href="https://github.com/Emelina1/Cyclistic-Trips-Analysis" target="_blank">
+								View full code on GitHub →
+							</a></p>
+                            <h2>Scenario and task</h2>
+							<p>Cyclistic is a fictional bike-share company in Chicago featuring over 5,800 geotracked bicycles locked into a network of 692 docking stations, offering 3 different bike types. The marketing director believes the company’s future success depends on maximizing annual memberships. Until now, Cyclistic’s marketing strategy relied on building general awareness and appealing to broad consumer segments. One approach that helped make these things possible was the flexibility of its pricing plans: single-ride passes, full-day passes, and annual memberships. Customers who purchase single-ride or full-day passes are referred to as casual riders. Customers who purchase annual memberships are Cyclistic members. Cyclistic’s finance analysts have concluded that annual members are much more profitable than casual riders and so there might be a solid opportunity to convert casual riders into members. Annual members are much more profitable than casual ones, but the company’s flexible plan offer does not focus enough on attracting annual riders. Business task: Analyze a full year of bike usage to share insights on casual and annual riders in order to help guide effective marketing strategies to increase annual memberships among existing and potential users.</p>				    
+							<h2>Data source</h2>
+							<p>The data has been made available by Motivate International Inc. under this license (https://divvybikes.com/data-license-agreement), to download from https://divvy-tripdata.s3.amazonaws.com/index.html. I will use historical trip data from 2021 stored across 12 CSV files for each month. BigQuery is used to upload the files individually due to their size ranging from 9MB to 150MB. At a high level, all fields will serve for the analysis except for ride_id and station_id. Ride_id was used to discard possible duplicates before dropping it.<br>
+							<h2>Key findings</h2>
+							<p>The peak season correlates to the warmer season from June to August, while February sees the lowest usage. Of the 4,555,596 total trips, casual users account for 44.7%, taking 30.7% more trips than members on weekends but 23.9% fewer on weekdays. 50% of all casual rides occur between June and August.<br>
+							43% of casual rides happen on a weekend, with Saturday being the strongest day. Average trip duration varies significantly, with casual users' rides being 50% longer than members' on average. Monday and Sunday see the longest ride durations. 
+							Regarding rideable types, docked bikes are almost entirely used by casual members.
+							Casual rides tend to concentrate in 3-4 spots around main city and touristic attractions, with Navy Pier area are a nucleus, while member rides are more dispersed in and outside Chicago downtown.		
+							<h2>Recommendations</h2>
+							<p>-Target Peak Months (June-August): Focus annual membership campaign actions and conversion efforts during the peak season.<br>
+							-Visitor and Casual Riders: Tailor options for residents to prioritize regular and local user’s satisfaction attracting conversion.<br>
+							-Zone based plans: Consider geographic or zone-based plans to differentiate one-time and full-day usage plans, while offering full coverage to annual members.<br>
+							-Digital engagement: Invest in digital tracking apps to extend and optimize regular user’s experience while boosting engagement.<br>
+							<br>
+							Further insights could be found by accessing data on identifiable users, such as residency and age to categorize profiles and usage patterns identifying different main motivations. Additionally, a survey could validate the analysis findings, while interviewing a sample of member and casual riders could provide deeper insights to effective strategies for converting casual and potential users.<br>
+							
+						</div>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<div class="inner">
+								<section>
+									<h2>Connect</h2>
+									<ul class="icons">
+										<li><a href="https://www.linkedin.com/in/emelina-play/" class="icon brands style2 fa-linkedin"><span class="label">linkedin</span></a></li>
+									</ul>
+									</section>
+									<ul class="copyright">
+										<li>&copy; Untitled. All rights reserved</li><li>Design template by <a href="http://html5up.net">HTML5 UP</a></li>
+										<li>Design adaptations by me</a></li>
+									</ul>
+								</div>
+							</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
