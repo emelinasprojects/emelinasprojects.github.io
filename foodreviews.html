@@ -47,26 +47,26 @@
 							<span class="image main"><img src="images/food_dash.JPG" alt="" /></span>							
 							</a></p>
                             <h2>Description</h2>
-							<p>Personal project exploring natural language and user behaviour. Sourced from Amazon Fine Foods Kaggle dataset (568K+ reviews across 74K products, 1999–2012), combining ratings, user / product ID and review text.</p>				    
+							<p>This is a personal project to explore natural language and user behaviour analysis. The Amazon Fine Foods Reviews dataset was used, sourced from Kaggle. The dataset includes 568K+ reviews across 74K products from 1999–2012. Data includes ratings, user / product ID, helpful reaction counts and review text.</p>				    
 							<h2>Objectives</h2>
-							<p>-Drivers to review engagement and helpful reactions.
+							<p>-Search motivations to review engagement and drivers to helpful reactions.
 							-Negative and positive review key themes.<br>	
 							-Helpfulness trends (What makes a review helpful?).<br>
 							-Yearly and monthly patterns.<br>
 							-Recurrent and one-time user behavioural trends.<br>
 							<h2>Python Exploratory Analysis Insights</h2>
 							<p>-Reviews increased exponentially up to 2012, peaking by 2021, which correlates to product variety increase (Unique Product IDs). October sees the highest average review count, while November sees the lowest.<br>
-							-Score: 5 star reviews dominate the dataset consistently, followed by 1 start reviews.<br>
-							-Helpfulness: Helpful votes grew 5 times faster and reach 3 times more counts than Non Helpful votes.<br>
-							-Users: 80% of users reviewed once while 0,05%% posted >50 reviews. Excessive reviewers gathered more positive scores; reviewing texts revealed potential bots or spam users.<br>
-							-Review themes: Reviews cluster around experience, emotion, health, practical value. Most helpful reviews further highlight warnings, ingredients and quality.<br>
-							-Longer texts tend to have 5 starts, and 500-1,000 character lengths clutter most helpful reviews, suggesting 20–60 seconds reading time is optimal.<br>
+							-5 star reviews dominate the dataset consistently, followed by 1 start reviews.<br>
+							-Helpful votes grew 5 times faster and reach 3 times more counts than Non Helpful votes.<br>
+							-80% of users reviewed once while 0,05%% posted >50 reviews. Excessive reviewers gathered more positive scores; text samples revealed potential bots or spam users.<br>
+							-Product reviews clusters focus on experience, emotion, health and practical value. Most helpful reviews further highlight warnings, ingredients and quality.<br>
+							-Longer texts tend to have 5 starts, and the 500-1K character length range groups the most helpful reviews, suggesting 20–60 seconds reads are optimal for users and effective to capture consumers' feedback.<br>
 							<br>
 							<br>
 							A Power BI dashboard was built to visualize relationships among score, text sentiment, reading time, user recurrence and reactions (helpful-non helpful), highlighting volume trends and correlations between review attributes and user feedback.<br>
-							Top reviewed products revealed engagement shifts across time showing most reviewed in the last year receive the lowest rating and helpful reaction weight on average.<br>
+							Most reviewed products revealed engagement shifts across time with the most reviewed in 2012 being the youngest product (Illy expresso coffee), while receiving the lowest average rating and helpful reaction percentage against total reactions.<br>
 							<span class="image main"><img src="images/dashs_food.png" alt="" /></span>
-							<p>Clustering themes in Python lacked insights, so I used keyword frequency sampling to identify prevailing themes, aided by an LLM, and explore user motivations behind posting and reacting to reviews.<br>
+							<p>Clustering themes in Python lacked useful insights, so instead I used keyword frequency sampling to identify prevailing themes aided by an LLM, and explore user motivations behind posting and reacting to reviews.<br>
 							<span class="image main"><img src="images/report_pos_topics.png" alt="" /></span>
 							<span class="image main"><img src="images/report_neg_topics.png" alt="" /></span>
 							<span class="image main"><img src="images/report_helpf.png" alt="" /></span>
